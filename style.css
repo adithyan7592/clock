@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #61dafb;
+    border-radius: 50%;
+    background: #282c34;
+}
+
+.hand {
+    position: absolute;
+    background: #61dafb;
+    border-radius: 50%;
+    transform-origin: bottom center;
+    transform: rotate(90deg);
+    transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+    width: 6px;
+    height: 50px;
+    top: 25px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.minute-hand {
+    width: 4px;
+    height: 70px;
+    top: 10px;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 90px;
+    top: -10px;
+    left: 50%;
+    margin-left: -1px;
+    background: red;
+}
+
+.center-circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #61dafb;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+}
+
+.number {
+    position: absolute;
+    color: #61dafb;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.number-12 {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number-3 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.number-6 {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number-9 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
